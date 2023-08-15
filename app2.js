@@ -24,18 +24,34 @@
 //   }
 
   //Get Element By TagName. -->
-  let li = document.getElementsByTagName('li');
-  console.group('li');
-  for (let i = 0; i < li.length; i++) {
-      if (li[i].textContent === 'Add Items') {
-        li[i].style.fontWeight = 'bold';
-        li[i].style.color = 'green';
-      }
-    }
+  // let li = document.getElementsByTagName('li');
+  // console.group('li');
+  // for (let i = 0; i < li.length; i++) {
+  //     if (li[i].textContent === 'Add Items') {
+  //       li[i].style.fontWeight = 'bold';
+  //       li[i].style.color = 'green';
+  //     }
+  //   }
   
-    li[1].style.backgroundColor = 'green';
+  //   li[1].style.backgroundColor = 'green';
   
-    for(let i = 0; i < li.length; i++){
-      li[i].style.fontWeight = 'bold';
+  //   for(let i = 0; i < li.length; i++){
+  //     li[i].style.fontWeight = 'bold';
+  //   }
+
+    //QuerySelector. -->
+    let title = document.querySelector('title');
+    console.log('title');
+
+    let item = document.querySelectorAll('li');
+    item[1].style.color = 'green'; 
+    item[2].style.visibility = 'hidden';
+
+    let odd = document.querySelectorAll('li:nth-child(odd)');
+    for(let i = 0; i < odd.length; i++){
+      odd[i].style.backgroundColor = 'green';
     }
+    
+
+
   
