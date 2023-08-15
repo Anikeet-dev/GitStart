@@ -10,3 +10,10 @@ for (let i = 0; i < cardItems.length; i++) {
       cardItems[i].style.color = 'green';
     }
   }
+
+  let items = document.getElementsByClassName('list-group-item');
+  items[1].style.backgroundColor = 'green';
+
+  for(let i = 0; i < items.length; i++){
+    items[i].style.fontWeight = 'bold';
+  }
